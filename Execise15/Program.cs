@@ -4,23 +4,45 @@
 // 7 -> да
 // 1 -> нет
 
-//Console.Write("Введите любое число от 1 до 7: ");
+string DayNumber (int num)
+{
+   if (num == 1) 
+   {
+      string result = ("это понедельник -> рабочий день");
+      return result;
+   }
+   if (num == 2) 
+   {
+      string result = ("это вторник -> рабочий день");
+      return result;
+   }
+   if (num == 3) 
+   {
+      string result = ("это среда -> рабочий день");
+      return result;
+   }
+   if (num == 4) 
+   {
+      string result = ("это четверг -> рабочий день");
+      return result;
+   }
+   if (num == 5) 
+   {
+      string result = ("это пятница -> рабочий день");
+      return result;
+   }
+   if (num == 6) 
+   {
+      string result = ("это суббота -> выходной день");
+      return result;
+   }
+   else
+   {
+      string result = ("это воскресенье -> выходной день");
+      return result;
+   }
+}
+
 int number = new Random().Next(1, 8);
 Console.WriteLine($"Цифра, обозначающая день недели: {number}");
-//int number = Convert.ToInt32(Console.ReadLine());
-
-// int Number (int num)
-// {
-if (number == 1)  Console.Write ("это понедельник -> рабочий день");
-if (number == 2)  Console.Write ("это вторник -> рабочий день");
-if (number == 3)  Console.Write ("это среда -> рабочий день");
-if (number == 4)  Console.Write ("это четверг -> рабочий день");
-if (number == 5)  Console.Write ("это пятница -> рабочий день");
-if (number == 6)  Console.Write ("это суббота -> выходной день");
-if (number == 7)  Console.Write ("это воскресенье -> выходной день");
-   //{
-        // return Convert.ToString ("-> рабочий день");
-       
- //  }   
-// }
-// Console.Write(Number);
+Console.WriteLine(DayNumber(number));

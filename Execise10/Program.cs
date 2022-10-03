@@ -2,6 +2,7 @@
 //456 -> 5
 //782 -> 8
 //918 -> 1
+
 int SecondNum(int num)
 {
     int firstStep = num / 10;
